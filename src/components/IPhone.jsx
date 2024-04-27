@@ -11,7 +11,7 @@ import React, { useEffect, useRef } from 'react'
 import { useGLTF, useTexture } from '@react-three/drei'
 
 function IPhone(props) {
-  const { nodes, materials } = useGLTF('/models/scene.glb')
+  const { nodes, materials } = useGLTF('/apple_website/models/scene.glb')
 
     const texture = useTexture(props.item.img);
 
@@ -257,4 +257,4 @@ function IPhone(props) {
 
 export default IPhone;
 
-useGLTF.preload('/models/scene.glb')
+useGLTF.preload('/apple_website/models/scene.glb')
